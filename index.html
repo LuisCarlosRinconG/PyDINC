@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌴 Planes y Distraez INC. 🌴</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    background:#000;
+}
+
+.banner{
+    position:relative;
+    width:100vw;
+    height:100vh;
+}
+
+.banner img{
+    width:100%;
+    height:100%;
+    object-fit:contain; /* Muestra la imagen completa */
+    background:#000;
+    display:block;
+}
+
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.25);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.titulo{
+    position:absolute;
+    top:30px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:10;
+    color:white;
+    font-size:3.5rem;
+    font-weight:bold;
+    text-shadow:0 4px 15px rgba(0,0,0,.8);
+    letter-spacing:2px;
+}
+
+.contenido{
+    max-width:900px;
+}
+
+.frase{
+    color:white;
+    font-size:2.5rem;
+    font-style:italic;
+    line-height:1.4;
+    text-shadow:0 4px 15px rgba(0,0,0,.9);
+}
+
+.autor{
+    margin-top:20px;
+    font-size:1.5rem;
+    font-weight:bold;
+    color:#ffe082;
+}
+
+@media(max-width:768px){
+
+    .titulo{
+        font-size:2rem;
+        width:90%;
+    }
+
+    .frase{
+        font-size:1.5rem;
+    }
+
+    .autor{
+        font-size:1.1rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="banner">
+
+    <h1 class="titulo">🌴 Planes y Distraez INC. 🌴</h1>
+
+    <img src="Vacacion.jpeg" alt="Destino Vacacional">
+
+    <div class="overlay">
+        <div class="contenido">
+
+            <div class="frase">
+                "El mundo es un libro, y aquellos que no viajan leen solo una página."
+            </div>
+
+            <div class="autor">
+                – San Agustín
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
